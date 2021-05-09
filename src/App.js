@@ -1,23 +1,27 @@
-import logo from './logo.svg';
+import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css';
+import image from "./img/sport.jpg";
+import vedeo from "./vidio/video1.mp4";
+//import "./components/styles/styles";
+
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+     <div style={{border:"solid 5px black",maxWidth:'400vw' ,backgroundColor:"#E7E9EB" }}>
+
+      <h1 className="title red" style={{textAlign:"center", color: "red"}}>Your name here</h1>
+      
+
+      <img className="image" src={image} width="250" height="250"   alt=""/> 
+      <br/>
+      <img  className="image" src="./images/img.jpg" width="250" height="250" alt=""/> 
+      
+
+      <video clasName="videoo" controls src={vedeo} width="320"  height="240" type=""/>
+     
+      </div>
+
     </div>
   );
 }
